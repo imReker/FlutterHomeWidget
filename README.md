@@ -1,23 +1,24 @@
-# Flutter Android/iOS Widget Example
+# Flutter Android/iOS/macOS Widget Example
 
-This app demonstrates how to create an Android Home Widget or iOS Today widget rendered by Flutter.
+This project demonstrates how to create an Android/iOS Home Widget or macOS Today Widget rendered by pure Flutter.
 
 # Previews
 ![Previews](https://github.com/imReker/FlutterHomeWidget/raw/master/preview.gif)
 
+# Introduction
+All widget examples in this project are full functional, including widget configure and update.
+
 # iOS
-WIP, will be release ASAP.
+Flutter engine on iOS takes too much memory and may only works on Simulator.
 
-# Android
-This example demonstrates 2 different methods to display an Android Widget.
-
-And it has full support for Android Widget including new widget configure.
+# Render mode
+This project uses 2 different of methods to render a widget.
 
 **1. UI Mode**
 
 In UI Mode, flutter engine is initialized with a separate `main` Dart function and run a separate App to display UI of widget.
 
-The UI is rendered by a background renderer at the Java side, a Bitmap of UI will be taken and show in the widget.
+The UI is rendered by the background renderer, a Bitmap of UI screenshot will be taken and show in the widget.
 
 
 PROs:
@@ -26,17 +27,18 @@ Simple, write code as normal flutter app.
 
 CONs:
 
-Slow, run a full flutter app can takes >6 seconds on an old phone.
+Slow, run a full flutter app can takes >6 seconds on an old Android phone.
 
-`runApp` is slow, and wait for renderer takes more time.
+Flutter side of `runApp` is slow, and wait for renderer takes more time.
+
 
 **2. Image Mode**
 
 In Image Mode, flutter engine is initialized with a separate `main` Dart function and listen a `MethodChannel`.
 
-The handler of `MethodChannel` will draw a image by `Canvas` and return the bytes array to Android side.
+The handler of `MethodChannel` will draw a image by a dart `Canvas` and return the bytes array to native side.
 
-When Android widget request to update, it calls the Dart code, get the bytes array and convert to Bitmap, and show in the widget.
+When the widget request to update, it convert the bytes to Bitmap and show.
 
 
 PROs:
@@ -47,4 +49,4 @@ Moreover, you can write your own Encoder of `MethodChannel` to boost the speed o
 
 CONs:
 
-Difficult to write code, the whole Android widget is drawn by Canvas.
+Difficult to write code, the whole widget content is drawn by `Canvas`.
