@@ -3,7 +3,9 @@
 This project demonstrates how to create an Android/iOS Home Widget or macOS Today Widget rendered by pure Flutter.
 
 # Previews
-![Previews](https://github.com/imReker/FlutterHomeWidget/raw/master/preview.gif)
+![Previews](https://github.com/imReker/FlutterHomeWidget/raw/master/preview_android.gif)
+![Previews](https://github.com/imReker/FlutterHomeWidget/raw/master/preview_iOS.gif)
+![Previews](https://github.com/imReker/FlutterHomeWidget/raw/master/preview_macOS.gif)
 
 # Introduction
 All widget examples in this project are full functional, including widget configure and update.
