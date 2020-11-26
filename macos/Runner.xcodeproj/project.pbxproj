@@ -33,7 +33,6 @@
 		AA7FA8B2255E8EC4007FD588 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7FA8B1255E8EC4007FD588 /* WidgetKit.framework */; };
 		AA7FA8B4255E8EC4007FD588 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7FA8B3255E8EC4007FD588 /* SwiftUI.framework */; };
 		AA7FA8D6255E90A5007FD588 /* ImageWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA7FA8CC255E90A3007FD588 /* ImageWidget.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
-		AA7FA8D8255E90A5007FD588 /* ImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FA8D0255E90A4007FD588 /* ImageWidget.swift */; };
 		AA7FA8DB255E90A5007FD588 /* HomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FA8D3255E90A4007FD588 /* HomeWidget.swift */; };
 		AA7FA8E0255E90EF007FD588 /* ImageWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AA7FA8CC255E90A3007FD588 /* ImageWidget.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
 		AA7FA927255EA186007FD588 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FA926255EA186007FD588 /* IntentHandler.swift */; };
@@ -47,6 +46,7 @@
 		AA7FAA0B255EDB35007FD588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7FA906255E91C3007FD588 /* Assets.xcassets */; };
 		AA7FAA11255EDC5E007FD588 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73912EF22F37F9E000D13A0 /* App.framework */; };
 		AA7FAA12255EDC5F007FD588 /* FlutterMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D1A10322148B71006C7A3E /* FlutterMacOS.framework */; };
+		AABD178C256F3FD6009965BB /* ImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABD178B256F3FD6009965BB /* ImageWidget.swift */; };
 		D73912F022F37F9E000D13A0 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73912EF22F37F9E000D13A0 /* App.framework */; };
 		D73912F222F3801D000D13A0 /* App.framework in Bundle Framework */ = {isa = PBXBuildFile; fileRef = D73912EF22F37F9E000D13A0 /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D98684D883616F39641FD88B /* Pods_HomeWidgetIntent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23AD3765DC90575E2DA106 /* Pods_HomeWidgetIntent.framework */; };
@@ -148,7 +148,6 @@
 		AA7FA8B1255E8EC4007FD588 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		AA7FA8B3255E8EC4007FD588 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		AA7FA8CC255E90A3007FD588 /* ImageWidget.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; name = ImageWidget.intentdefinition; path = ../../ios/HomeWidget/ImageWidget.intentdefinition; sourceTree = "<group>"; };
-		AA7FA8D0255E90A4007FD588 /* ImageWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageWidget.swift; path = ../../ios/HomeWidget/ImageWidget.swift; sourceTree = "<group>"; };
 		AA7FA8D3255E90A4007FD588 /* HomeWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeWidget.swift; path = ../../ios/HomeWidget/HomeWidget.swift; sourceTree = "<group>"; };
 		AA7FA8D5255E90A5007FD588 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../ios/HomeWidget/Info.plist; sourceTree = "<group>"; };
 		AA7FA8FB255E91B6007FD588 /* SkScalar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkScalar.h; sourceTree = "<group>"; };
@@ -169,6 +168,7 @@
 		AA7FA9F5255ED673007FD588 /* HomeWidgetExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeWidgetExtensionDebug.entitlements; sourceTree = "<group>"; };
 		AA7FA9F9255ED689007FD588 /* HomeWidgetExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeWidgetExtensionRelease.entitlements; sourceTree = "<group>"; };
 		AA7FAA39256219FC007FD588 /* HomeWidgetIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeWidgetIntent.entitlements; sourceTree = "<group>"; };
+		AABD178B256F3FD6009965BB /* ImageWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ImageWidget\U001b.swift"; path = "../../ios/HomeWidget/ImageWidget\U001b.swift"; sourceTree = "<group>"; };
 		C1168DE6019DD4327443B428 /* Pods-HomeWidgetIntent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWidgetIntent.release.xcconfig"; path = "Target Support Files/Pods-HomeWidgetIntent/Pods-HomeWidgetIntent.release.xcconfig"; sourceTree = "<group>"; };
 		D12BD88DDA45CD0B52D73FB7 /* Pods_HomeWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73912EF22F37F9E000D13A0 /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/ephemeral/App.framework; sourceTree = SOURCE_ROOT; };
@@ -303,7 +303,7 @@
 			children = (
 				AA7FA8F9255E91B6007FD588 /* Skia */,
 				AA7FA8D3255E90A4007FD588 /* HomeWidget.swift */,
-				AA7FA8D0255E90A4007FD588 /* ImageWidget.swift */,
+				AABD178B256F3FD6009965BB /* ImageWidget.swift */,
 				AA7FA9A1255EC60A007FD588 /* CrossPlatformImages.swift */,
 				AA7FA93A255EA35B007FD588 /* Widget-Bridging-Header.h */,
 				AA7FA8D5255E90A5007FD588 /* Info.plist */,
@@ -667,7 +667,7 @@
 			files = (
 				AA7FA8D6255E90A5007FD588 /* ImageWidget.intentdefinition in Sources */,
 				AA7FA9A2255EC60A007FD588 /* CrossPlatformImages.swift in Sources */,
-				AA7FA8D8255E90A5007FD588 /* ImageWidget.swift in Sources */,
+				AABD178C256F3FD6009965BB /* ImageWidget.swift in Sources */,
 				AA7FA9A9255EC785007FD588 /* GeneratedPluginRegistrant.swift in Sources */,
 				AA7FA8DB255E90A5007FD588 /* HomeWidget.swift in Sources */,
 			);

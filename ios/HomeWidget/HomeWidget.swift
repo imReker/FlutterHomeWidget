@@ -16,8 +16,8 @@ struct HomeWidget: WidgetBundle {
     @WidgetBundleBuilder
     var body: some Widget {
         ImageWidget()
-        ImageUIWidget()
         #if os(iOS)
+        ImageUIWidget()
         UIWidget()
         #endif
     }
