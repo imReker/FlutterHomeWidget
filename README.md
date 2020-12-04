@@ -29,9 +29,9 @@ Simple, write code as normal flutter app.
 
 CONs:
 
-Slow, run a full flutter app can takes >6 seconds on an old Android phone.
-
-Flutter side of `runApp` is slow, and wait for renderer takes more time.
+Slow, Flutter side of `runApp` is slow, and a 200ms delay should be manually set after `setState`, because you have to wait for UI refresh.
+It can takes >6 seconds in Debug mode on an old Android phone.
+Fortunately, it only takes ~1 second in Release mode, so the speed is still acceptable.
 
 
 **2. Image Mode**
@@ -47,8 +47,10 @@ PROs:
 
 Fast, only a few of codes is executed, bitmap is transferred via memory.
 
+No need to wait for render, the image is drawn realtime.
+
 Moreover, you can write your own Encoder of `MethodChannel` to boost the speed of the exchange of data.
 
 CONs:
 
-Difficult to write code, the whole widget content is drawn by `Canvas`.
+Difficult to write code, the whole content is drawn by `Canvas`.
