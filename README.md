@@ -10,11 +10,12 @@ This project demonstrates how to create an Android/iOS Home Widget or macOS Toda
 # Introduction
 All widget examples in this project are full functional, including widget configure and update.
 
-# iOS
-Flutter engine on iOS takes too much memory and may only works on Simulator.
+# Notice
+1. Flutter engine on iOS takes too much memory and may only works on Simulator.
+2. Flutter render engine on Android has bug on handling transparent image, details: https://github.com/flutter/flutter/issues/73036
 
 # Render mode
-This project uses 2 different of methods to render a widget.
+This project uses 2 different of methods to render a widget:
 
 **1. UI Mode**
 
